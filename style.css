@@ -4,9 +4,6 @@
   --clr-neutral600: hsl(208, 11%, 55%);
   -clr-neutral900: hsl(192, 100%, 9%);
 
-  --fontFamily-header: 'Poppins', sans-serif;
-  --fontFamily-body: 'Open Sans', sans-serif;
-
   --fontWeight400: 400;
   --fontWeight600: 600;
   --fontWeight700: 700;
@@ -92,4 +89,87 @@ h6 {
 
 .moon {
   font-family: var(--fontFamily-moon);
+}
+
+body {
+  font-family: var(--fontFamily-primary);
+}
+
+header {
+  display: grid;
+  gap: 3rem;
+  padding: 2.5rem;
+  background-image: url(images/bg-hero-mobile.svg);
+  background-color: var(--clr-neutral100);
+}
+
+main,
+footer {
+  padding: 2.5rem;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  gap: 4rem;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: var(--fontWeight600);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: var(--fontWeight600);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 20px;
+  box-shadow: 0.25rem 0.25rem 0.75rem rgb(201, 208, 216);
+  padding: 3rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 45rem) {
+  header {
+    background-image: url(images/bg-hero-desktop.svg);
+  }
+
+  article {
+    flex-direction: row;
+  }
+
+  img {
+    max-width: 50%;
+  }
+}
+
+.flexNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .gridGroup p {
+  font-size: 1.5rem;
+}
+
+.gridGroup {
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  text-align: center;
+}
+
+.gridGroup p {
+  font-weight: var(--fontWeight400);
+}
+
+article .gridGroup p {
+  color: var(--clr-neutral600);
 }
