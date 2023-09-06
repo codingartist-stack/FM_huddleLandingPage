@@ -10,6 +10,21 @@
   --fontWeight400: 400;
   --fontWeight600: 600;
   --fontWeight700: 700;
+
+  --fontFamily-primary: 'Open Sans';
+  --fontFamily-headings: 'Poppins';
+  --fontFamily-moon: 'IcoMoon';
+  --fontFamily-linear: 'Linearicons';
+}
+
+@font-face {
+  font-family: 'IcoMoon';
+  src: url(fonts/IcoMoon/IcoMoon-Free.ttf);
+}
+
+@font-face {
+  font-family: 'Linearicons';
+  src: url(fonts/Linearicons/Linearicons-Free.ttf);
 }
 
 /*
@@ -73,4 +88,8 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.moon {
+  font-family: var(--fontFamily-moon);
 }
