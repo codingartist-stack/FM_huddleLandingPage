@@ -130,7 +130,7 @@ article {
   justify-content: center;
   gap: 2rem;
   border-radius: 20px;
-  box-shadow: 0.25rem 0.25rem 0.75rem rgb(201, 208, 216);
+  box-shadow: 0.25rem 0.25rem 0.75rem rgba(108, 119, 127, 0.5);
   padding: 3rem;
 }
 
@@ -205,6 +205,13 @@ article .gridGroup p {
   color: var(--clr-neutral600);
 }
 
+.callToAction {
+  position: relative;
+  top: 55%;
+  background-color: white;
+  /* padding: 1rem 2rem; */
+}
+
 @media screen and (min-width: 45rem) {
   .gridGroup {
     max-width: 40%;
@@ -228,12 +235,49 @@ article .gridGroup p {
 footer {
   background-color: var(--clr-neutral900);
   color: white;
+  padding-top: 10rem;
+  display: grid;
+  gap: 1.75rem;
 }
 
-.footerImg {
+.footerContent {
+  display: grid;
+  gap: 1.75rem;
 }
 
 .footerFlex {
   display: flex;
   gap: 1rem;
+}
+
+.footerGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* footer icons */
+.icons {
+  justify-self: center;
+
+  display: flex;
+  gap: 1.5rem;
+  font-size: x-large;
+}
+
+.copyRight {
+  justify-self: center;
+}
+
+@media screen and (min-width: 45rem) {
+  .footerLinks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footerContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .copyRight {
+    justify-self: end;
+  }
 }
